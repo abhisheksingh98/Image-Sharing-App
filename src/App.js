@@ -35,6 +35,8 @@ function App() {
     let promises = [];
     let pinData = [];
 
+    let pins = ['ocean', 'Tokyo', 'dogs', 'cats', 'Bali', 'cars']
+
     pins.forEach((pinTerm) => {
       promises.push(
         getImages(pinTerm).then(res =>{
